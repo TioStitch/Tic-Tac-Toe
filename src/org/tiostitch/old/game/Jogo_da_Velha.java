@@ -15,7 +15,7 @@ public class Jogo_da_Velha extends JFrame {
             {0, 3, 6}, {1, 4, 7}, {2, 5, 8},
             {0, 4, 8}, {2, 4, 6}
     };
-    boolean playerRound = false;
+    private boolean playerRound = false;
 
     private Jogo_da_Velha() {
         setTitle("Jogo da Velha");
@@ -28,7 +28,7 @@ public class Jogo_da_Velha extends JFrame {
         setLocationRelativeTo(null);
 
         final int defaultSize = 50;
-        Font font = new Font("BOLD", Font.BOLD, 15);
+        final Font font = new Font("BOLD", Font.BOLD, 15);
         for (int repeat = 0; repeat < 3;) {
             final int coluna = (3 * repeat);
 
